@@ -3,14 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:museum_app/cubit/bloc.dart';
 import 'package:museum_app/cubit/museum_states.dart';
 
-class BlocMuseumsView extends StatefulWidget {
+class BlocMuseumsView extends StatelessWidget {
   const BlocMuseumsView({super.key});
 
-  @override
-  State<BlocMuseumsView> createState() => _BlocMuseumsViewState();
-}
-
-class _BlocMuseumsViewState extends State<BlocMuseumsView> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
