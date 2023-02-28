@@ -17,9 +17,6 @@ class BlocMuseumsView extends StatelessWidget {
   Scaffold buildScaffold() => Scaffold(
         appBar: AppBar(
           title: const Text('Museums'),
-          actions: [
-            IconButton(onPressed: () {}, icon: const Icon(Icons.replay))
-          ],
         ),
         body: BlocConsumer<MuseumCubits, MuseumStates>(
           listener: (context, state) {

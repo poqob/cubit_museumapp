@@ -27,10 +27,10 @@ class Db {
 
   Future<List> get museumsResult async {
     var museum = await _museums();
-    var abouts;
+
     List res = [];
     for (List element in museum) {
-      abouts = await _aboutMuseum(element.last).then((value) {
+      await _aboutMuseum(element.last).then((value) {
         //print("${element[1]}  ${value[0][0]}  ${value[0][1]}");
         res.add([element[1], value[0][0], value[0][1]]);
       });
